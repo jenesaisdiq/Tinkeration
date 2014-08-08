@@ -26,7 +26,7 @@
 #include "application.h"
 
 
-Class Tinkeration {
+class Tinkeration {
 	public:
 		Tinkeration();
 
