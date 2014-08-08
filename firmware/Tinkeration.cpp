@@ -26,6 +26,7 @@
 
 #include "Tinkeration.h"
 
+Tinkeration::Tinkeration(){}
 
 void Tinkeration::begin(void){
 	Spark.function("digitalread", tinkerDigitalRead);
