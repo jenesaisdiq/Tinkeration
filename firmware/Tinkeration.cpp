@@ -39,7 +39,7 @@ void Tinkeration::begin(void){
 
 
 
-uint_8 Tinkeration::tinkerDigitalRead(String pin) {
+uint8_t Tinkeration::tinkerDigitalRead(String pin) {
     int pinNumber = pin.charAt(1) - '0';
     if (pinNumber< 0 || pinNumber >7) return -1;
     if(pin.startsWith("D")) {
@@ -53,7 +53,7 @@ uint_8 Tinkeration::tinkerDigitalRead(String pin) {
     return -2;
 }
 
-uint_8 Tinkeration::tinkerDigitalWrite(String command){
+uint8_t Tinkeration::tinkerDigitalWrite(String command){
     bool value = 0;
     int pinNumber = command.charAt(1) - '0';
     if (pinNumber< 0 || pinNumber >7) return -1;
@@ -73,7 +73,7 @@ uint_8 Tinkeration::tinkerDigitalWrite(String command){
     else return -3;
 }
 
-uint_8 Tinkeration::tinkerAnalogRead(String pin){
+uint8_t Tinkeration::tinkerAnalogRead(String pin){
     int pinNumber = pin.charAt(1) - '0';
     if (pinNumber< 0 || pinNumber >7) return -1;
     if(pin.startsWith("D")){
@@ -87,7 +87,7 @@ uint_8 Tinkeration::tinkerAnalogRead(String pin){
     return -2;
 }
 
-uint_8 Tinkeration::tinkerAnalogWrite(String command){
+uint8_t Tinkeration::tinkerAnalogWrite(String command){
     int pinNumber = command.charAt(1) - '0';
     if (pinNumber< 0 || pinNumber >7) return -1;
     String value = command.substring(3);
