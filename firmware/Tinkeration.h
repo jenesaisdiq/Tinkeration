@@ -23,6 +23,9 @@
 ****************************************************************************
 */
 
+#ifndef _Tinkeration
+#define _Tinkeration
+
 #include "application.h"
 
 
@@ -43,3 +46,5 @@ class Tinkeration {
 
 
 };
+
+#endif
